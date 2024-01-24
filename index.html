@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/media.css">
+    <title>Sign-up system</title>
+</head>
+<body>
+    <div class="containerr">
+        <div class="toggle">
+            <div class="togglePath">
+                <div id="signUpPath">
+                    <span>Hello,Friend!</span>
+                    <p>Register with your personal details to use all of site features</p>
+                    <button id="signUpGo" class="btn btn-success rounded-5 w-25 fw-bold">Sign-up</button>
+                </div>
+                <div id="signInPath" class="d-none">
+                    <span>Welcome!</span>
+                    <p>Back!</p>
+                    <button id="signInGo" class="btn btn-success rounded-5 w-25 fw-bold">Sign-in</button>
+                </div>
+            </div>
+        </div>
+        <div id="signIn" class="form-container signIn">
+            <p>log in</p>
+            <form>
+                <input id="signInEmail" class=" form-control mt-3" type="text" placeholder="Email...">
+                <input id="signInPassword" class=" form-control mt-3" type="password" placeholder="Password...">
+                <h3 id="failLog" class="pt-3 fs-6 d-none">Incorrect Password or Email</h3>
+                <button id="logIn" type="button" class="btn btn-info mt-3 w-50 rounded-5">log in</button>
+            </form>
+        </div>
+        <div id="signUp" class="form-container signUp">
+            <p>Sign up</p>
+            <form>
+                <input id="signUpName" class="form-control mt-3" type="text" placeholder="Name...">
+                <h3 id="InvalidName" class="pt-3 fs-6 d-none">Invalid Name</h3>
+                <input id="signUpEmail" class="form-control mt-3" type="text" placeholder="Email...">
+                <h3 id="InvalidEmail" class="pt-3 fs-6 d-none">Invalid Email</h3>
+                <input id="signUpPassword" class="form-control mt-3" type="password" placeholder="Password...">
+                <h3 id="Reapeted" class="pt-3 fs-6 d-none">Already exist</h3>
+                <button id="registe" type="button" class="btn btn-info mt-3 w-50 rounded-5">Sign UP</button>
+                <a onclick="goToSignIn()" href="#" class=" d-block text-decoration-none" style="color: #fff; opacity: 0;">Already have an account. <span style="color:#eee ;">signIn</span></a>
+            </form>
+        </div>
+    </div>
+
+    <script src="JS/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
